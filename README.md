@@ -1,5 +1,5 @@
 # HactoberFest-2020
-This repository is made for beginners who want to make their first pull request to be eligible to participate in HactoberFest-2020.
+This repository is made for beginners who want to make their first pull request to be eligible for HactoberFest-2020.
 #### Follow these simple steps to dive into the git world:
 
 1) `Fork` this repository.
