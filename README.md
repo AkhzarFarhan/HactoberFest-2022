@@ -1,4 +1,4 @@
-# Hi Developers, Unfortunately this repository doesn't qualify for HactoberFest 2020. Please read more [here](https://github.com/AkhzarFarhan/HactoberFest-2020/issues).
+# Hi Developers, Unfortunately this repository doesn't qualify for HactoberFest 2020. Please read more [here](https://github.com/AkhzarFarhan/HactoberFest-2020/issues/1).
 
 # HactoberFest-2020
 This repository is made for absolute beginners who want to make their first pull request to get eligibility for HactoberFest-2020.
