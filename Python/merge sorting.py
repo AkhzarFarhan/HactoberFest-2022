@@ -33,7 +33,6 @@ def merge(arr):
             k += 1
             # c += 1
 
-
 arr = list(map(int, input().split()))
 
 merge(arr)
