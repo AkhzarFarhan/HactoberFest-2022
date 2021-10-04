@@ -5,13 +5,14 @@ int main()
 {
     
     int a = 15, b = 100;
+    int temp;
 
     cout << "Before swapping." << endl;
     cout << "a = " << a << ", b = " << b << endl;
 
-    a = a + b;
-    b = a - b;
-    a = a - b;
+    temp=a;
+    a=b;
+    b=temp;
 
     cout << "\nAfter swapping." << endl;
     cout << "a = " << a << ", b = " << b << endl;
