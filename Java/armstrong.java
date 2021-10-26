@@ -1,36 +1,37 @@
-package newstart;
+package FrequentPrograms;
+
 import java.util.Scanner;
-public class armstrong {
 
+public class ArmstrongNumberUsingWhile {
+	private static Scanner sc;
+	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-       Scanner sc = new Scanner(System.in);
-       System.out.println("Enter a number");
-       int n = sc.nextInt();
-       int f=n;
-       int sum=0;
-       if(n==0)
-       {
-    	   System.out.println("Armstrong number");
-    	   
-       }
-       else
-       {
-    	   while(n!=0)
-    	   {
-    		   int a = n%10;
-    		   sum += a*a*a;
-    		   n=n/10;
-    	   }
-    	   if(sum==f)
-    	   {
-    		   System.out.println("Armstrong number");
-    	   }
-    	   else
-    	   {
-    		   System.out.println("Not an Armstrong number");
-    	   }
-       }
-	}
+		int Number, Temp, Reminder, Times = 0;
+		double Sum = 0;
+		sc = new Scanner(System.in);		
+		System.out.println("\n Please Enter number to Check for Armstrong: ");
+		Number = sc.nextInt();
 
+		//Helps to prevent altering the original value
+		Temp = Number;
+		while (Temp != 0) {
+			Times = Times + 1;
+			Temp = Temp / 10;
+		   }
+		   
+		Temp = Number;
+		while( Temp > 0)  {
+			Reminder = Temp %10;
+		    Sum = Sum + Math.pow(Reminder, Times);
+		    Temp = Temp /10;
+		   }
+		System.out.format("\n Sum of entered number is = %.2f", Sum);
+		
+		if (Sum == Number) {
+			System.out.format("\n% d is a Armstrong Number", Number);
+		}
+		else {
+			System.out.format("\n% d is NOT a Armstrong Number", Number);
+		}
+	}
 }
