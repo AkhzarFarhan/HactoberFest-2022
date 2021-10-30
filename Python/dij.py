@@ -13,9 +13,9 @@ class Graph():
 					for row in range(vertices)]
 
 	def printSolution(self, dist):
-		print "Vertex \tDistance from Source"
+		print("Vertex \tDistance from Source")
 		for node in range(self.V):
-			print node, "\t", dist[node]
+			print(node, "\t", dist[node])
 
 	# A utility function to find the vertex with
 	# minimum distance value, from the set of vertices
@@ -43,7 +43,7 @@ class Graph():
 		dist[src] = 0
 		sptSet = [False] * self.V
 
-		for cout in range(self.V):
+		for _ in range(self.V):
 
 			# Pick the minimum distance vertex from
 			# the set of vertices not yet processed.

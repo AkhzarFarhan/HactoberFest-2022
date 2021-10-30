@@ -13,11 +13,11 @@ def armstrong(n):
     sum=0
     order=len(int(n))
     copy_n = n
-    while(n>0):
+    while (n>0):
         digit = n%10
         sum += digit **order
-        n = n//10
-        
+        n //= 10
+
     if(sum == copy_n):
         print(f"{copy_n} is an armstrong number")
         result = {
@@ -34,7 +34,7 @@ def armstrong(n):
             "Server IP":"122.234.213.53",
             "Other Numbers":[1,23,43,5,3]
         }
-    
+
     return jsonify(result)
 
 if __name__=="__main__":

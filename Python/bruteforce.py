@@ -1,4 +1,4 @@
-message = 'PYTHON' 
+message = 'PYTHON'
 LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 for key in range(len(LETTERS)):
     translated = ''
@@ -8,7 +8,7 @@ for key in range(len(LETTERS)):
             num = num - key
         if num<0:
             num = num + len(LETTERS)
-            translated = translated + LETTERS[num]
+            translated += LETTERS[num]
         else:
-            translated = translated + symbol
+            translated += symbol
     print('Hacking key #%s: %s' % (key, translated))

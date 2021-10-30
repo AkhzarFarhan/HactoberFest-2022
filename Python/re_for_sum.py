@@ -1,7 +1,7 @@
 import re
 
 name = open('re_sum.txt')
-lst = list()
+lst = []
 for line in name :
     num = re.findall('[0-9]+', line)
     for i in num :

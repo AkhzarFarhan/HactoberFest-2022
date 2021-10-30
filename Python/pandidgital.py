@@ -10,7 +10,7 @@ def is_pandigital(num):
             num = num.replace(digit, "", 1)
         else:
             return False
-    return True if len(num) == 0 else False
+    return len(num) == 0
 def solution():
     for num in range(9487, 9233, -1):
         num_to_check = int(str(num * 1) + str(num * 2))

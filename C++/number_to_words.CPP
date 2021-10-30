@@ -1,6 +1,7 @@
 //Converts any number between 0-9999 (inclusive) to words 
 #include<conio.h>
-#include<iostream.h>
+#include<iostream>
+using namespace std;
 
 void words(int n, int c, int r)
 {
@@ -43,18 +44,18 @@ void words(int n, int c, int r)
 }
 void main()
 {
-  clrscr();
-  cout<<"Enter a number: ";
-  int n;
-  cin>>n;
-  int n1=n;
-  int count=0, rev=0;
-  while(n1!=0)
-  {
-    rev=rev*10+(n1%10);
-    count++;
-    n1=n1/10;
-  }
-  words(n,count,rev);
-  getch();
+    system("cls");
+    cout<<"Enter a number: ";
+    int n;
+    cin>>n;
+    int n1=n;
+    int count=0, rev=0;
+    while(n1!=0)
+    {
+      rev=rev*10+(n1%10);
+      count++;
+      n1=n1/10;
+    }
+    words(n,count,rev);
+    getch();
 }

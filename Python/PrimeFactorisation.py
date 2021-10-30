@@ -16,11 +16,11 @@ def sieve(n):
                     spf[j] = i 
   
 def getFactorization(x): 
-    ret = list() 
+    ret = []
     while (x != 1): 
         ret.append(spf[x]) 
         x = x // spf[x] 
-  
+
     return ret
   
 x = 12
