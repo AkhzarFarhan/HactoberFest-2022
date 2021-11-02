@@ -11,6 +11,6 @@ print("\nSquere are:",end=" ")
 
 for i in range(1,n+1):
     print(i*i,end=",")
-    sum=sum+i*i
+    sum += i*i
 
 print("\nSum of Series:",sum)

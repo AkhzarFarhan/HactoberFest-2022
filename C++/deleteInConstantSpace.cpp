@@ -1,4 +1,7 @@
 // Link : https://leetcode.com/explore/learn/card/fun-with-arrays/526/deleting-items-from-an-array/3247/
+#include <iostream>
+#include <vector>
+using namespace std;
 
 int removeElement(vector<int>& nums, int val) {
         if(nums.size()==0) return 0;

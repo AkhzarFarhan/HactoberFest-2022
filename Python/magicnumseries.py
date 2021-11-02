@@ -3,9 +3,9 @@ for i in range(1,10000):
     a = i
     s = 0
 
-    while(a>0):
+    while (a>0):
         digit = a%10
-        s = s+digit
+        s += digit
         a//=10
 
     z = s

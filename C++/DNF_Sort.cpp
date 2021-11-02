@@ -1,4 +1,4 @@
-# The Dutch National Flag problem :-
+/* # The Dutch National Flag problem :-
 
 The Dutch national flag (DNF) problem is one of the most popular programming problems proposed by Edsger Dijkstra. The flag of the Netherlands consists of three colors: white, red, and blue. The task is to randomly arrange balls of white, red, and blue such that balls of the same color are placed together.
 
@@ -7,6 +7,7 @@ Consider this problem on an array; the task is to sort arrays of 0, 1, and 2 in 
 ```c
 // C++ program to sort an array 
 // with 0, 1 and 2 in a single pass 
+*/
 #include <iostream>
 using namespace std;
 
@@ -64,8 +65,7 @@ int main()
     cout<<A[i]<<" ";
 
 }
-```
-```c
+/*
 ENTER SIZE OF ARRAY : 10
 ENTER ARRAY ELEMENTS : 1 1 2 0 0 1 2 2 1 0
 ARARY AFTER SORTING : 0 0 0 1 1 1 1 2 2 2 
@@ -74,4 +74,4 @@ ENTER SIZE OF ARRAY : 7
 ENTER ARRAY ELEMENTS : 0 1 1 2 1 1 0
 ARARY AFTER SORTING : 0 0 1 1 1 1 2 
 
-```
+*/
