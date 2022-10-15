@@ -1,4 +1,4 @@
-# Hi Developers, Unfortunately this repository doesn't qualify for HactoberFest 2021. Please read more [here](https://github.com/AkhzarFarhan/HactoberFest-2022/issues/1).
+# Hi Developers, Unfortunately this repository doesn't qualify for HactoberFest 2022. Please read more [here](https://github.com/AkhzarFarhan/HactoberFest-2022/issues/1).
 
 # HactoberFest-2022
 This repository is made for absolute beginners who want to make their first pull request to get eligibility for HactoberFest-2022.
