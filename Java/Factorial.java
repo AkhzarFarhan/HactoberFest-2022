@@ -7,13 +7,19 @@ public class factorial {
 		System.out.println("Enter a number to find its factorial:");
 		Scanner stdin=new Scanner(System.in);
 		number=stdin.nextInt();
+		
+		long fac=factorial(number);
+		System.out.println("Factorial of "+number+" is "+fac);
+	}
+	
+	public long factorial(int fac)
+	{
 		long  factorial=1;
-		//finds factorial
 		for(int i=1; i<=number ;  i++)
 		{
 			factorial=factorial*i;
 		}
-		System.out.println("Factorial of "+number+" is "+factorial);
+		return factorial;
 	}
 
 }
