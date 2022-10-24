@@ -1,3 +1,4 @@
+// modified fibbonacci series code
 #include <iostream>
 using namespace std;
 
@@ -12,8 +13,10 @@ int fib(int n){
  
 
 int main(){
-    int n;
+    int n,f;
     cin>>n;
-    cout<<fib(n);
+    for(int i=1;i<=n;i++) {
+        f=fib(i);
+    cout<<f<< " ";
     return 0;
 }
