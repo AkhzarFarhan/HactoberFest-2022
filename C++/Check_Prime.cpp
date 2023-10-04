@@ -1,49 +1,36 @@
 #include <bits/stdc++.h>
-typedef long long int ll;
-#define M 1000000007
 using namespace std;
 
 //This program will help you to check if a number is prime or not in O(sqrt(n)).
 
 bool is_prime(int x)
 {
-    int cnt = 0;
-    for (int i = 1; i * i <= x; i++)
-    {
-        if (x % i == 0)
-        {
-            cnt += 2;
-        }
-        if (i * i == x)
-        {
-            cnt--;
-        }
-    }
-    if (cnt == 2)
-    {
-        return true;
-    }
-    else
-    {
+    if(x<=1)
         return false;
-    }
+    if(x==2||x==3)
+        return true;
+    if(x%2==0 || x%3==0)
+        return false;
+    for(int i=5;i<=sqrt(x);i+=6)
+        {
+            if(x%i==0 || x%(i+2)==0)
+                return false;
+        } 
+    return true;
 }
 
 int main()
 {
-    ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
     int n;
-    cin >> n;
-
-    if (is_prime(n))
+    cout<<"Enter a number ";
+    cin>>n;
+    if(is_prime(n))
     {
-        cout << n << " is a prime number." << endl;
+        cout<<"Number is prime";
     }
     else
     {
-        cout << n << " is not a prime number." << endl;
-    }
-
+        cout<<"Number is not prime";
+    }    
     return 0;
 }
